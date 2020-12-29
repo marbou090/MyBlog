@@ -217,6 +217,7 @@ font:
 social:
   GitHub: https://github.com/marbou090
   Twitter: https://twitter.com/mr__py
+  Portfolio : https://marbou090.github.io/
 
 
 # Social Links Icons
@@ -230,7 +231,8 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  Portfolio : pen-square
+  
 
 
 # Sidebar Avatar
