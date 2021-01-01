@@ -1,6 +1,6 @@
 ---
-title: maru
-tags:
+title: はじめまして
+tags: 日常
 ---
 
 ### みえてますか
