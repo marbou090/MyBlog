@@ -53,6 +53,15 @@ TwitterAPIとMecabを使ってタイムラインの人気単語をワードク�
 
 ![](https://cdn.discordapp.com/attachments/712655088119709716/794358707264815134/2021-01-01_9.17.49.png)
 
+### Discord.pyで全知全能ゲームbotを作った
+友人からの依頼で全知全能というボードゲームをDiscordでできるようにbotを作りました。GitHubの使い方を[Atriaくん(@AtriaSoft) | Twitter](https://twitter.com/AtriaSoft)に教わりながら開発をしました。リリース機能たのしい！Atriaくん本当にありがとう！
+
+ゲーム製作者様からの許可はいただいていないので、リポジトリは公開していません。
+
+[全知全能ゲーム製作者様ページ](https://booth.pm/ja/items/2067630)
+
+![](https://cdn.discordapp.com/attachments/712655088119709716/794621830878986300/5.png)
+
 ### GitHub Pagesでポートフォリオとブログを作った
 
 ハッカソンでやる気が出たのでその勢いで作りました。Jekyllというmdファイルをhtmlに変換してくれる、RubyGemsで配布されているRuby製のツールを使っています。この子を使おうと思った決め手は、Jekyll Themeというテンプレートの豊富さです！
