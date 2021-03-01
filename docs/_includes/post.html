@@ -2,6 +2,7 @@
 <div id="posts" class="posts-expand">
   {% assign post = page %}
   {% include _macro/post.html %}
+  {% include mathjax-v2.html %}
   <div class="post-spread">
     {% if site.jiathis %}
       {% include _partials/share/jiathis.html %}
