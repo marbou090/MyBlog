@@ -81,17 +81,17 @@ $$P$$の確率測度についてもう少し解説を加える。$$\Omega$$の�
 (2)$$ P(X\ge20) , P(20\le Y<30) $$を求めよ。 
   \begin{equation}
     \begin{split}
-      P(X\ge20)=&P(X=20)+P(X=21)+\cdots
-      &=\sum_{k=20}^{\infty}P(X=k) \\\\
-      &=\sum_{k=20}^{\infty}\frac{1}{6}\left(\frac{5}{6}\right)^k \\\\
-      &=\left(\frac{5}{6}\right)^{20} \\\\
+      P(X\ge20)=&P(X=20)+P(X=21)+\cdots \\\\\\
+      &=\sum_{k=20}^{\infty}P(X=k) \\\\\\
+      &=\sum_{k=20}^{\infty}\frac{1}{6}\left(\frac{5}{6}\right)^k \\\\\\
+      &=\left(\frac{5}{6}\right)^{20} \\\\\\
     \end{split}
   \end{equation} 
 
   \begin{equation}
     \begin{split}
-      P(20\le Y<30)=&\sum_{k=20}^{29}\frac{1}{6}\left(\frac{5}{6}\right)^{k-1} \\\\
-      &=\left(\frac{5}{6}\right)^{19} - \left(\frac{5}{6}\right)^{29}
+      P(20\le Y<30)=&\sum_{k=20}^{29}\frac{1}{6}\left(\frac{5}{6}\right)^{k-1} \\\\\\
+      &=\left(\frac{5}{6}\right)^{19} - \left(\frac{5}{6}\right)^{29} \\\\\\
     \end{split}
   \end{equation} 
 
