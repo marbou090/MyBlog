@@ -12,19 +12,21 @@ tags:
 
 以下は解答PDFと同じ内容です。
 
-
 ## 本日の問題解答
-$$f_X(x)=2e^{-2x}~~~(0<x\le 3),~ce^{-4x}~~~(x>3),~0~~~(Otherwise)$$のとき、  
+$$f_X(x)=2e^{-2x}~~~(0<x\le 3),~ce^{-4x}~~~(x>3),~0~~~(Otherwise)$$ のとき、  
 (1) 定数cを求めよ。
+$$
    \begin{equation}
      \begin{split}
-       1 =& \int_{0}^{3}e^{-2x}dx + \int_{3}^{\infty}ce^{-4x}dx\\\\\\
+       1 =& \int_{0}^{3}e^{-2x}dx + \int_{3}^{\infty}ce^{-4x}dx \\\\\\
        & = \left[ -e^{-2x} \right]_0^3 + \left[ c \frac{e^{-4x}}{-4} \right]_3^\infty \\\\\\
        & = 1-e^{-6} + c\frac{e^{-12}}{4} \\\\\\
      \end{split}
    \end{equation}
+$$
    よって、$$c=4e^6 $$ である。
 (2) E[X]を求めよ。  
+$$
   \begin{equation}
     \begin{split}
       E[X] &= \int_{0}^{3} x2e^{-2x} dx + c\int_{3}^{\infty}xe^{-4x}dx \\\\\\
@@ -34,6 +36,7 @@ $$f_X(x)=2e^{-2x}~~~(0<x\le 3),~ce^{-4x}~~~(x>3),~0~~~(Otherwise)$$のとき、
       &= \frac{2-e^{-6}}{4} \\\\\\
     \end{split}
   \end{equation} 
+$$
 
 
 
