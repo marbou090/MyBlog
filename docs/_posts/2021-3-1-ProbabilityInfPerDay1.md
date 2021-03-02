@@ -3,8 +3,11 @@ title: 確率情報理論1日目
 tags: 確率情報理論,Tex
 ---
 
-春休みに１日１問、確率情報理論を解く会に使った問題をのせています。3月1日の問題です。
+春休みに１日１問、確率情報理論を解く会に使った問題をのせています。3月1日の問題です。  
+[問題PDF](https://marbou090.github.io/MyBlog/folder/sec01.pdf)  
+[解答PDF](https://marbou090.github.io/MyBlog/folder/sec01.pdf)  
 
+以下は解答PDFと同じ内容です。
 
 ## 本日の問題解答
 １の目がでる確率が $$\frac{1}{2}$$ で、他の目については均等な確率であるサイコロを考える。
@@ -38,7 +41,7 @@ tags: 確率情報理論,Tex
 (3) このサイコロを２個投げたとき、２つとも奇数の目が出る確率を求めよ。まずこのサイコロ１個を投げたとき、奇数の目が出る確率は、
   \begin{equation}
     \begin{split}
-      P(\\{1,3,5\\})&=\frac{1}{2} + \frac{1}{10} + \frac{1}{10} 
+      P(\\{1,3,5\\})&=\frac{1}{2} + \frac{1}{10} + \frac{1}{10} \\\\
       &=\frac{7}{10}
     \end{split}
   \end{equation}  
@@ -77,15 +80,15 @@ $$P$$の確率測度についてもう少し解説を加える。$$\Omega$$の�
   \begin{equation}
     \begin{split}
       P(X\ge20)=&P(X=20)+P(X=21)+\cdots
-      &=\sum_{k=20}^{\infty}P(X=k)
-      &=\sum_{k=20}^{\infty}\frac{1}{6}\left(\frac{5}{6}\right)^k 
-      &=\left(\frac{5}{6}\right)^{20}
+      &=\sum_{k=20}^{\infty}P(X=k) \\\\
+      &=\sum_{k=20}^{\infty}\frac{1}{6}\left(\frac{5}{6}\right)^k \\\\
+      &=\left(\frac{5}{6}\right)^{20} \\\\
     \end{split}
   \end{equation} 
 
   \begin{equation}
     \begin{split}
-      P(20\le Y<30)=&\sum_{k=20}^{29}\frac{1}{6}\left(\frac{5}{6}\right)^{k-1}
+      P(20\le Y<30)=&\sum_{k=20}^{29}\frac{1}{6}\left(\frac{5}{6}\right)^{k-1} \\\\
       &=\left(\frac{5}{6}\right)^{19} - \left(\frac{5}{6}\right)^{29}
     \end{split}
   \end{equation} 
