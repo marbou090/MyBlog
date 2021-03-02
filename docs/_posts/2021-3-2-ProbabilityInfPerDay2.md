@@ -15,23 +15,23 @@ tags:
 
 ## 本日の問題解答
 $$f_X(x)=2e^{-2x}~~~(0<x\le 3),~ce^{-4x}~~~(x>3),~0~~~(Otherwise)$$のとき、  
-(1) 定数cを求めよ。  
+(1) 定数cを求めよ。
    \begin{equation}
      \begin{split}
-       1 =& \int_{0}^{3}e^{-2x}dx + \int_{3}^{\infty}ce^{-4x}dx\\\\
-       & = \left[ -e^{-2x} \right]_0^3 + \left[ c \frac{e^{-4x}}{-4} \right]_3^\infty \\\\
-       & = 1-e^{-6} + c\frac{e^{-12}}{4} \\\\
+       1 =& \int_{0}^{3}e^{-2x}dx + \int_{3}^{\infty}ce^{-4x}dx\\\\\\
+       & = \left[ -e^{-2x} \right]_0^3 + \left[ c \frac{e^{-4x}}{-4} \right]_3^\infty \\\\\\
+       & = 1-e^{-6} + c\frac{e^{-12}}{4} \\\\\\
      \end{split}
    \end{equation}
    よって、$$c=4e^6$$ 
 (2) E[X]を求めよ。  
   \begin{equation}
     \begin{split}
-      E[X] &= \int_{0}^{3} x2e^{-2x} dx + c\int_{3}^{\infty}xe^{-4x}dx \\\\
-      &= \int_{0}^{6} ue^{-u}\frac{du}{2} + c\int_{12}^{\infty}\frac{u}{4}e^{-u}\frac{du}{4} \\\\
-      &= \frac{1}{2}\left[ -(u+1)e^{-u}  \right]_0^6 + \frac{c}{16}\left[ -(u+1)e^{-u} \right]_{12}^\infty \\\\
-      &= \frac{1-7e^{-6}}{2} + \frac{13e^{-6}}{4} \\\\
-      &= \frac{2-e^{-6}}{4} \\\\
+      E[X] &= \int_{0}^{3} x2e^{-2x} dx + c\int_{3}^{\infty}xe^{-4x}dx \\\\\\
+      &= \int_{0}^{6} ue^{-u}\frac{du}{2} + c\int_{12}^{\infty}\frac{u}{4}e^{-u}\frac{du}{4} \\\\\\
+      &= \frac{1}{2}\left[ -(u+1)e^{-u}  \right]_0^6 + \frac{c}{16}\left[ -(u+1)e^{-u} \right]_{12}^\infty \\\\\\
+      &= \frac{1-7e^{-6}}{2} + \frac{13e^{-6}}{4} \\\\\\
+      &= \frac{2-e^{-6}}{4} \\\\\\
     \end{split}
   \end{equation} 
 
