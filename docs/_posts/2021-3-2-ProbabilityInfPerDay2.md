@@ -23,7 +23,7 @@ $$f_X(x)=2e^{-2x}~~~(0<x\le 3),~ce^{-4x}~~~(x>3),~0~~~(Otherwise)$$のとき、
        & = 1-e^{-6} + c\frac{e^{-12}}{4} \\\\\\
      \end{split}
    \end{equation}
-   よって、$$c=4e^6$$ 
+   よって、$$c=4e^6 $$ である。
 (2) E[X]を求めよ。  
   \begin{equation}
     \begin{split}
