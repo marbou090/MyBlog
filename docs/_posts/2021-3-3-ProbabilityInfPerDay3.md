@@ -36,7 +36,6 @@ tags:
  $$
   \begin{equation}
     F(X)= \begin{cases}
-      {}\\\\\\
       {0~~~X<1}\\\\\\
       {\dfrac{1}{15}~~~1\le X<2}\\\\\\
       {\dfrac{3}{15}~~~2\le X<3}\\\\\\
