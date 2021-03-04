@@ -36,9 +36,8 @@ tags:
 $$
   \begin{equation}
     F(X)= \left\\{ 
-        \displaystyle
         \begin{array}{llllll}
-            {0 & X<1} \\\\\\
+        \displaystyle {0 & X<1} \\\\\\
             {\frac{1}{15} & 1\le X<2}\\\\\\
             {\frac{3}{15} & 2\le X<3}\\\\\\
             {\frac{6}{15} & 3\le X<4}\\\\\\
