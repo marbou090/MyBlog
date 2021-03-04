@@ -31,8 +31,7 @@ tags:
       &=\frac{55}{15}
     \end{split}
   \end{equation} 
-(3) 確率変数$$X(\omega)=\omega$$の分布関数$$F(X)$$を求めて図示せよ。  
-
+(3) 確率変数$$X(\omega)=\omega$$の分布関数$$F(X)$$を求めて図示せよ。（図は省略）  
  $$
   \begin{equation}
     F(X)= \begin{cases}
