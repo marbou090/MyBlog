@@ -32,16 +32,20 @@ tags:
     \end{split}
   \end{equation} 
 (3) 確率変数$$X(\omega)=\omega$$の分布関数$$F(X)$$を求めて図示せよ。  
+
+ $$
   \begin{equation}
-    F(X)= \left\{ \begin{array}{llllll}
-            {0 & X<1} \\\\\\
-            {\frac{1}{15} & 1\le X<2}\\\\\\
-            {\frac{3}{15} & 2\le X<3}\\\\\\
-            {\frac{6}{15} & 3\le X<4}\\\\\\
-            {\frac{10}{15} & 4\le X<5}\\\\\\
-            {\frac{15}{15} & 5\le X}\\\\\\
-        \end{array} \right.
+    F(X)=
+    \begin{cases}
+      {0~~~X<1}\\\\\\
+      {\frac{1}{15}~~~1\le X<2}\\\\\\
+      {\frac{3}{15}~~~2\le X<3}\\\\\\
+      {\frac{6}{15}~~~3\le X<4}\\\\\\
+      {\frac{10}{15}~~~4\le X<5}\\\\\\
+      {\frac{15}{15}~~~5\le X}\\\\\\
+    \end{cases}
   \end{equation} 
+  $$
 
 
 
