@@ -25,7 +25,7 @@ tags:
         &= \sqrt{2\pi}
      \end{split}
    \end{equation}
-   よって、$$\sqrt{2\pi} c =1$$となることから、 \\\\\\
+   よって、$$\sqrt{2\pi} c =1$$となることから、
    \begin{equation}
    \therefore c=\frac{1}{\sqrt{2\pi}}
    \end{equation}
@@ -33,8 +33,9 @@ tags:
    \begin{equation}
     f_X(x)=\frac{1}{2\pi} e^{-\frac{x^2}{2}}
    \end{equation}
+   
 (2) $$E[X]$$  
-  $$\displaystyle xe^{-\frac{x^2}{2}}$$が奇関数であることを利用する。
+  $$\displaystyle xe^{-\frac{x^2}{2}}$$が奇関数であることを利用する。 
   \begin{equation}
     \begin{split}
       E[X]&= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}xe^{-\frac{x^2}{2}}dx \\\\\\
@@ -42,6 +43,7 @@ tags:
       &= 0
     \end{split}
   \end{equation} 
+
 (3) $$V[X]$$  
   $$V[X]=E(X^2)-(E(X))^2$$を利用する。 
   \begin{equation}
@@ -65,17 +67,17 @@ tags:
 ## 本日の問題解説
 ### 標準正規分布
 \begin{equation}
-    $$\displaystyle f_X(x)=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
+    \displaystyle f_X(x)=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
 \end{equation}
 
 ### 正規分布
   $$Y=\mu + \sigma X$$とすると、
   \begin{equation}
-    $$\displaystyle f_Y(x)=\frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{(x-\mu)^2}{2\sigma ^2}}$$
+    \displaystyle f_Y(x)=\frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{(x-\mu)^2}{2\sigma ^2}}
   \end{equation}
 
 ### ガンマ関数
-    **定義**　$$\displaystyle \Gamma (s)=\int_{0}^{\infty}x^{s-1}e^{-x}dx \. \. \. (s>0)$$  
+    **定義**   $$\displaystyle \Gamma (s)=\int_{0}^{\infty}x^{s-1}e^{-x}dx~~~(s>0)$$  
     （また、$$e^{-x}=u$$と置換すると、$$\displaystyle \Gamma (s)=\int_{0}^{1}(-\log u)^{s-1} du$$となる。）
 
  標準正規分布と正規分布は暗記さえすれば期待値と分散がわかればすぐに密度関数を求められる。
@@ -109,7 +111,7 @@ tags:
        &= \frac{1}{\sqrt{10\pi}}e^{-\frac{(x-2)^2}{10}}
      \end{split}
    \end{equation}
-   (補足：$$\Phi (x)=P(N(0,1)\le x)$$は標準正規分布の分布関数 \\\\\\ 
+   (補足：$$\Phi (x)=P(N(0,1)\le x)$$は標準正規分布の分布関数)
 
 ## おかわり問題解説
 (2)は正規分布の公式を暗記していれば計算０ですぐ答えが出る。ここでは実際に標準正規分布から計算を行う方法を用いた。
