@@ -36,13 +36,13 @@ tags:
  $$
   \begin{equation}
     F(X)= \begin{cases}
-    \displaystyle
+      {}\\\\\\
       {0~~~X<1}\\\\\\
-      {\frac{1}{15}~~~1\le X<2}\\\\\\
-      {\frac{3}{15}~~~2\le X<3}\\\\\\
-      {\frac{6}{15}~~~3\le X<4}\\\\\\
-      {\frac{10}{15}~~~4\le X<5}\\\\\\
-      {\frac{15}{15}~~~5\le X}\\\\\\
+      {\dfrac{1}{15}~~~1\le X<2}\\\\\\
+      {\dfrac{3}{15}~~~2\le X<3}\\\\\\
+      {\dfrac{6}{15}~~~3\le X<4}\\\\\\
+      {\dfrac{10}{15}~~~4\le X<5}\\\\\\
+      {\dfrac{15}{15}~~~5\le X}
     \end{cases}
   \end{equation} 
   $$
