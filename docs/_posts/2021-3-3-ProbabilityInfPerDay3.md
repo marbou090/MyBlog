@@ -1,5 +1,5 @@
 ---
-title: 確率情報理論2日目
+title: 確率情報理論3日目
 tags: 
  - 確率情報理論
  - TeX
@@ -32,6 +32,8 @@ tags:
     \end{split}
   \end{equation} 
 (3) 確率変数$$X(\omega)=\omega$$の分布関数$$F(X)$$を求めて図示せよ。
+ 
+ $$
   \begin{equation}
     F(X)=
     \begin{cases}
@@ -43,6 +45,7 @@ tags:
       {\frac{15}{15}~~~5\le X}\\\\\\
     \end{cases}
   \end{equation} 
+  $$
 
 
 ## おかわり問題解答
@@ -58,7 +61,7 @@ tags:
       &P(X=5,Y=0)=P(X=5,Y=1)=\frac{5}{30}\\\\\\
     \end{split}
   \end{equation}
-  
+
 (2 )条件付き期待値$$E[X=k|Y=1]$$を求めよ。
   \begin{equation}
     \begin{split}
