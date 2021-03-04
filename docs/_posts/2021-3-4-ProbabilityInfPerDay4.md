@@ -33,7 +33,7 @@ tags:
    \begin{equation}
     f_X(x)=\frac{1}{2\pi} e^{-\frac{x^2}{2}}
    \end{equation}
-   
+
 (2) $$E[X]$$  
   $$\displaystyle xe^{-\frac{x^2}{2}}$$が奇関数であることを利用する。 
   \begin{equation}
@@ -77,8 +77,12 @@ tags:
   \end{equation}
 
 ### ガンマ関数
-    **定義**   $$\displaystyle \Gamma (s)=\int_{0}^{\infty}x^{s-1}e^{-x}dx~~~(s>0)$$  
-    （また、$$e^{-x}=u$$と置換すると、$$\displaystyle \Gamma (s)=\int_{0}^{1}(-\log u)^{s-1} du$$となる。）
+**定義**は以下。
+    \begin{equation}
+      \displaystyle \Gamma (s)=\int_{0}^{\infty}x^{s-1}e^{-x}dx~~~(s>0)
+    \end{equation}
+  （また、$$e^{-x}=u$$と置換すると、$$\displaystyle \Gamma (s)=\int_{0}^{1}(-\log u)^{s-1} du$$となる。）
+
 
  標準正規分布と正規分布は暗記さえすれば期待値と分散がわかればすぐに密度関数を求められる。
  解答にあるように標準正規分布から正規分布を求めることもできるので、一度はガンマ関数を用いて求めてみてもよいと思う。
