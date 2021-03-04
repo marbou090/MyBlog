@@ -33,7 +33,7 @@ tags:
   \end{equation} 
 (3) 確率変数$$X(\omega)=\omega$$の分布関数$$F(X)$$を求めて図示せよ。
   \begin{equation}
-    F(X)= \left\{ \begin{array}{ll}
+    F(X)= \left\\{ \begin{array}{ll}
 
       {0 & X<1} \\\\\\
       {\frac{1}{15} & 1\le X<2}\\\\\\
