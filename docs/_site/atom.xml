@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-01T19:08:42+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-20T08:26:16+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
 
 &lt;h1 id=&quot;2020年振り返り&quot;&gt;2020年振り返り&lt;/h1&gt;
 
 &lt;h3 id=&quot;global-game-jam-に参加した&quot;&gt;Global Game Jam に参加した&lt;/h3&gt;
 &lt;p&gt;テーマは”Repair”でした。
 友人とProcessingでゲームを作りました。たのしかた！&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/marbou090/Repair-it-&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/794242389208203274/2021-01-01_1.34.00.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -34,17 +36,24 @@
 &lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/794346512914186260/2021-01-01_8.29.21.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;funlocksに参加した&quot;&gt;FunLocksに参加した&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://funlocks.github.io/&quot;&gt;学内ハッカソンFunLocks&lt;/a&gt;に参加しました！テーマは”コロナ禍に大学などで使いたいプロダクト”と難しいテーマでした。企業賞をひとついただけました。わーーい！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://funlocks.github.io/&quot;&gt;学内ハッカソンFunLocks&lt;/a&gt;に参加しました！テーマは”コロナ禍に大学などで使いたいプロダクト”で、なかなかに難しいテーマでした。企業賞をひとついただけました。わーーい！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/794357723923349514/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;バック/サーバーサイド担当として、サーバーAPI作成、サンプルデータの生成、機械学習を用いて過去の時間割から混雑を予測し、可視化してHerokuへデプロイをしました。かっこよく混雑予測なんて言ってますが、データもそれっぽく生成しただけの偽データで学習させているので正確さはないです。&lt;/p&gt;
+&lt;p&gt;バック/サーバーサイド担当として、サーバーAPI作成、サンプルデータの生成、機械学習を用いて過去の時間割から混雑を予測し、可視化してHerokuへデプロイをしました。かっこよく混雑予測なんて言ってますが、それっぽく生成しただけの偽データで学習させているので正確さはないです。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://voivoi.herokuapp.com/&quot;&gt;混雑予測の可視化&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/794358707264815134/2021-01-01_9.17.49.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;discordpyで全知全能ゲームbotを作った&quot;&gt;Discord.pyで全知全能ゲームbotを作った&lt;/h3&gt;
+&lt;p&gt;友人からの依頼で全知全能というボードゲームをDiscordでできるようにbotを作りました。GitHubの使い方を&lt;a href=&quot;https://twitter.com/AtriaSoft&quot;&gt;Atriaくん(@AtriaSoft) | Twitter&lt;/a&gt;に教わりながら開発をしました。リリース機能たのしい！Atriaくん本当にありがとう！&lt;/p&gt;
+
+&lt;p&gt;ゲーム製作者様からの許可はいただいていないので、リポジトリは公開していません。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://booth.pm/ja/items/2067630&quot;&gt;全知全能ゲーム製作者様ページ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/794621830878986300/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;github-pagesでポートフォリオとブログを作った&quot;&gt;GitHub Pagesでポートフォリオとブログを作った&lt;/h3&gt;
 
