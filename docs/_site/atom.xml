@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-20T08:26:16+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T21:46:10+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">「兎田ぺこら」になる(なれない)</title><link href="http://localhost:4000/2021/12/20/TranslateToPekora/" rel="alternate" type="text/html" title="「兎田ぺこら」になる(なれない)" /><published>2021-12-20T00:00:00+09:00</published><updated>2021-12-20T00:00:00+09:00</updated><id>http://localhost:4000/2021/12/20/TranslateToPekora</id><content type="html" xml:base="http://localhost:4000/2021/12/20/TranslateToPekora/">&lt;p&gt;この記事は&lt;a href=&quot;https://adventar.org/calendars/7183&quot;&gt;FUN part2 Advent Calendar 2021 Part2&lt;/a&gt;の20日目の記事です。昨日は嶋さんの&lt;a href=&quot;https://shima-chimp.hateblo.jp/entry/2021/12/19/030214&quot;&gt;『なんか半年で退職したやつとその時の事』&lt;/a&gt;でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。&lt;/p&gt;
+
+&lt;h1 id=&quot;自己紹介&quot;&gt;自己紹介&lt;/h1&gt;
+&lt;p&gt;はこだて未来大複雑系コース学部３年の加藤まると申します。先日鬼滅の刃を視聴しました。とても面白かったです。友達を募集しています。&lt;/p&gt;
+
+&lt;p&gt;さて、本日は題名にある通り兎田ぺこらになっていこうと思います。&lt;/p&gt;
+
+&lt;h1 id=&quot;兎田ぺこらとはなにか&quot;&gt;兎田ぺこらとはなにか&lt;/h1&gt;
+&lt;p&gt;人物名です。女性です。動くイラストを使いインターネットなどで活動をする人をバーチャルYouTuberといい、彼女もそのひとりです。
+&lt;img src=&quot;https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/1369026/65734_855766.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+出典: https://www.hololive.tv/portfolio/items/usada-pekora&lt;/p&gt;
+
+&lt;p&gt;彼女は語尾に「ぺこ」をつけており、文体も可愛らしいです。文体から彼女の可愛さが滲み出ていますね。惚れてしまいます。兎田ぺこらといえばこの文体であり、この文体といえば兎田ぺこらです。
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922305624002404352/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;本題&quot;&gt;本題&lt;/h1&gt;
+&lt;p&gt;さて、本日は兎田ぺこらになっていきます。上で示したように、彼女の文体は彼女を表しています。つまり入力した文をぺこら語調に変換できれば、兎田ぺこらになったと言っても過言ではないわけです。ということで、自然言語処理を用いて大好きな兎田ぺこらになっていきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922307285395595274/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;提案手法&quot;&gt;提案手法&lt;/h3&gt;
+&lt;p&gt;どんな語調も英語に翻訳することで正規化を行えることを利用します。&lt;/p&gt;
+
+&lt;p&gt;砕けた文も英語に翻訳し、もう一度日本語に戻すと正規化された文を得ることができます。
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922305274667212861/1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922305274407174224/5fb0288b305e30d4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「I’m tired.」と「疲れちゃったにぇ」をペアで覚えておくことで、次に「つかれた」と入力したとき英語文が一致する「疲れちゃったにぇ」が出力をすることで元の文体を復元できます。このアルゴリズムを用いて、ぺこら辞書を作り文体を変換します。&lt;/p&gt;
+
+&lt;h4 id=&quot;ぺこら辞書の準備&quot;&gt;ぺこら辞書の準備&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;兎田ぺこらの書いた文を文節にわけ、２つずつのペアを作成&lt;/li&gt;
+  &lt;li&gt;それをGoogle Translate APIに投げ英語に翻訳&lt;/li&gt;
+  &lt;li&gt;日本語(ぺこら語調)と英語の辞書を作成&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;変換するときのアルゴリズム&quot;&gt;変換するときのアルゴリズム&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;入力された日本語文をGoogle Translate APIに投げ英語に翻訳&lt;/li&gt;
+  &lt;li&gt;ぺこら辞書から「英語」で一致するものを探す&lt;/li&gt;
+  &lt;li&gt;一致すれば日本語文をぺこら語に変換&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これで通常の語調をぺこら語調に変換していきます。&lt;/p&gt;
+
+&lt;h3 id=&quot;実験&quot;&gt;実験&lt;/h3&gt;
+&lt;p&gt;気づいたら２年分の兎田ぺこらのツイートが手元のPCに全て保存されていたのでそれを使います。ぺこらになるのは私だけで良いので詳しい説明はしません。&lt;/p&gt;
+
+&lt;p&gt;えい！
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922828270985179166/77af10659f789efe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;えいえい！
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/799713968771170324/922828754886225930/2021-12-21_21.31.55.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これでぺこら辞書が作れました。では実際に変換できるか試してみましょう。元の辞書にない単語組み合わせは変換できないので、試しにぺこらのツイートを語調変えて入力してみます。&lt;/p&gt;
+
+&lt;p&gt;えい！&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text = '本日は触りしかできませんでしたがプレイしていてとても面白かったです。皆さんも見てくれてありがとうございました！！！'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; 本日は触りしか遊ぶぺこいたあのとても面白かったです。見てくれてくれてありがとうございました！！！
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ぺこが出現していますが変換できていません。ちなみに元のツイートは「今日は触りしかできなかったけど遊んでてとっても面白かったぺこ✨✨みんなも見てくれてありがとおお！！！」です。&lt;/p&gt;
+
+&lt;h3 id=&quot;考察&quot;&gt;考察&lt;/h3&gt;
+&lt;p&gt;うまくいかなかった原因の心当たりはいくつかあります。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;「！」や「〜」などの記号を消さなかった&lt;/li&gt;
+  &lt;li&gt;Google Translateが賢いためニュアンスの違いで英訳が少しずつ異なりうまく一致をとれない&lt;/li&gt;
+  &lt;li&gt;ツイート内容が偏っている&lt;/li&gt;
+  &lt;li&gt;一致で置き換えのアルゴリズムが弱い
+などがあげられます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;考えられる対策としては他アイドルもデータセットにいれ辞書を増やし、ぺこら辞書を最優先で置換させることで辞書は増えると思われます。英訳の辞書を工夫し少しの変化にも耐えられる方法も考えられます。&lt;/p&gt;
+
+&lt;p&gt;結論としては、兎田ぺこらは唯一無二のアイドルなので私ごときが真似するなど100万年早かったということです。さすがでした。&lt;/p&gt;
+
+&lt;h3 id=&quot;参考文献&quot;&gt;参考文献&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pdmagazine.jp/people/dazai-program/&quot;&gt;【6月19日は桜桃忌】プログラミングで蘇る太宰治&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiita.com/satsukiya/items/a99b2736831015115701&quot;&gt;Pythonを使ってフェフ姉言葉に変換してみた件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;あとがき&quot;&gt;あとがき&lt;/h1&gt;
+&lt;p&gt;文体変換というテーマはやってみたかったので楽しかったです。彼女を題材にしたのは好きだからです。(私の中で)最強のアイドルだからです。理由は十分ですね。幸せな時間でした。&lt;/p&gt;
+
+&lt;p&gt;明日21日目の記事はふぁるくんです。PBLがんばってえらかった！&lt;/p&gt;</content><author><name>Marubou</name></author><category term="個人開発" /><category term="Python" /><category term="自然言語処理" /><summary type="html">この記事はFUN part2 Advent Calendar 2021 Part2の20日目の記事です。昨日は嶋さんの『なんか半年で退職したやつとその時の事』でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。</summary></entry><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
 
 &lt;h1 id=&quot;2020年振り返り&quot;&gt;2020年振り返り&lt;/h1&gt;
 
