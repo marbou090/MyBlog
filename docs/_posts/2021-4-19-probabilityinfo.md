@@ -7,6 +7,8 @@ tags:
 
 春休みの時間を使って、大学の同期と1日1問ずつ確率情報理論についての問題を解く会をしました。昨年夏にも１日１確率論をやっており、今回はTeXを用いて資料作成を行ってみました。確率情報理論リポジトリで使った資料を公開しています。
 
+問題は下記の参考問題集から、数字を変えたりして出題しています。個人が制作したものですので、間違いなどがあるかもしれません。使用する際は注意してください。
+
 # 資料URL
 [確率情報理論リポジトリ](https://github.com/marbou090/ProbabilityInfPerDay)
 
@@ -42,7 +44,7 @@ tags:
 クラメールラオの不等式
 + [第１５回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec15.pdf)・[第１５回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans15.pdf)  
 仮説検定
-+ [第１６回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec16.pdf)・[第１６回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans16.pdf)
++ [第１６回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec16.pdf)・[第１６回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans16.pdf)  
 情報量
 + [第１７回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec17.pdf)・[第１７回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans17.pdf)  
 エントロピー, 相互エントロピー
