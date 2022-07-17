@@ -6,7 +6,7 @@ tags:
 ---
 「統計的機械学習の数理100問 with Python」の輪読会にて、サポートベクトルマシンの担当になりました。資料を置いておこうと思います。
 
-[資料PDF](https://marbou090.github.io/MyBlog/folder/サポートベクトルマシン.pdf)  
+[資料PDF](https://marbou090.github.io/MyBlog/folder/supportvector.pdf)  
 
 ### 感想
 最適化問題楽しそうだな〜、という気持ちになりました。楽しかったです。
