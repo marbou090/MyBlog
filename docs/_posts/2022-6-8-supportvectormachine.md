@@ -13,6 +13,7 @@ tags:
 
 ### 画像出典
 + カーネル法概念図(https://www.ism.ac.jp/~fukumizu/OsakaU2014/OsakaU_1intro.pdf)
+
 他写真は「サポートベクトルマシン (機械学習プロフェッショナルシリーズ) 」「統計的機械学習の数理100問 with Python」からお借りしています。
 
 ### 参考文献
