@@ -12,9 +12,11 @@ tags:
 
 # お品書き
 
-+ [第１回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec01.pdf)・[第１回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans01.pdf) 　
++ [第１回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec01.pdf)・[第１回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans01.pdf)  
+
 離散確率分布,確率空間,確率分布,分布関数
-+ [第２回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec02.pdf)・[第２回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans02.pdf) 　
++ [第２回問題](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec02.pdf)・[第２回解答](https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans02.pdf)  
+
 連続確率分布,確率関数,期待値
 + 第３回  
 離散確率分布,(累積)分布関数,期待値,同時確率,条件付き期待値
