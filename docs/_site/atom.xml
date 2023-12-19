@@ -1,4 +1,167 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T21:49:01+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">「兎田ぺこら」になる(なれない)</title><link href="http://localhost:4000/2021/12/20/TranslateToPekora/" rel="alternate" type="text/html" title="「兎田ぺこら」になる(なれない)" /><published>2021-12-20T00:00:00+09:00</published><updated>2021-12-20T00:00:00+09:00</updated><id>http://localhost:4000/2021/12/20/TranslateToPekora</id><content type="html" xml:base="http://localhost:4000/2021/12/20/TranslateToPekora/">&lt;p&gt;この記事は&lt;a href=&quot;https://adventar.org/calendars/7183&quot;&gt;FUN part2 Advent Calendar 2021 Part2&lt;/a&gt;の20日目の記事です。昨日は嶋さんの&lt;a href=&quot;https://shima-chimp.hateblo.jp/entry/2021/12/19/030214&quot;&gt;『なんか半年で退職したやつとその時の事』&lt;/a&gt;でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-26T02:13:35+09:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Maru Blog</title><subtitle>未来大複雑系B2です。データサイエンス・機械学習・自然言語処理に興味があります。</subtitle><author><name>Marubou</name></author><entry><title type="html">【自分用メモ】</title><link href="http://localhost:4000/2023/08/25/ProbingTask/" rel="alternate" type="text/html" title="【自分用メモ】" /><published>2023-08-25T00:00:00+09:00</published><updated>2023-08-25T00:00:00+09:00</updated><id>http://localhost:4000/2023/08/25/ProbingTask</id><content type="html" xml:base="http://localhost:4000/2023/08/25/ProbingTask/">&lt;p&gt;日本語でのまとめが見当たらなかったので自分用の書き残しです。学生のまとめですので、いろいろご容赦ください。&lt;/p&gt;
+
+&lt;h1 id=&quot;1-probing手法とは&quot;&gt;1. Probing手法とは&lt;/h1&gt;
+&lt;p&gt;事前学習済み言語モデルの文脈化された単語埋め込み(Contextualized Word Embeddings, CWE)を入力とし、特定の言語的性質を予測するような分類器を学習することで、言語モデルの内部表現を調べる手法。&lt;/p&gt;
+
+&lt;h1 id=&quot;2-どういう時に使うか&quot;&gt;2. どういう時に使うか&lt;/h1&gt;
+&lt;p&gt;言語モデルの内部表現と、言語的性質との関連を調べたい時に用いる。例えば学習した言語モデルが品詞情報を獲得しているのか評価したいときなどに、Probing手法を用いる。&lt;/p&gt;
+
+&lt;h1 id=&quot;3-probing手法の詳細&quot;&gt;3. Probing手法の詳細&lt;/h1&gt;
+
+\[f : x \longmapsto \hat{y}\]
+
+&lt;h2 id=&quot;良いところ&quot;&gt;良いところ&lt;/h2&gt;
+&lt;p&gt;自分が調べたい言語的性質を決めうちで調べられる。&lt;/p&gt;
+
+&lt;h2 id=&quot;悪いところ&quot;&gt;悪いところ&lt;/h2&gt;
+&lt;p&gt;言語モデルがその言語的性質を獲得している = その言語的性質がパフォーマンスに寄与しているとは限らない&lt;/p&gt;
+
+&lt;h1 id=&quot;4-私が読んだprobing手法を用いた研究&quot;&gt;4. 私が読んだProbing手法を用いた研究&lt;/h1&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+
+&lt;h1 id=&quot;5-内部表現を調べる他手法&quot;&gt;5. 内部表現を調べる他手法&lt;/h1&gt;
+&lt;h2 id=&quot;可視化&quot;&gt;可視化&lt;/h2&gt;
+&lt;p&gt;内部表現をえいやと可視化&lt;/p&gt;
+&lt;h3 id=&quot;良いところ-1&quot;&gt;良いところ&lt;/h3&gt;
+&lt;p&gt;見やすい。きめうちじゃない。&lt;/p&gt;
+&lt;h3 id=&quot;悪いところ-1&quot;&gt;悪いところ&lt;/h3&gt;
+&lt;p&gt;遠回り。見えたところで、そのクラスタが何者かわからない。&lt;/p&gt;
+
+&lt;h1 id=&quot;参考文献&quot;&gt;参考文献&lt;/h1&gt;
+&lt;p&gt;Alexis Conneau, German Kruszewski, Guillaume Lample, Loïc Barrault, and Marco Baroni. 2018. What you can cram into a single $&amp;amp;!#* vector: Probing sentence embeddings for linguistic properties. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 2126–2136, Melbourne, Australia. Association for Computational Linguistics.&lt;/p&gt;
+
+&lt;p&gt;John Hewitt and Percy Liang. 2019. Designing and Interpreting Probes with Control Tasks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 2733–2743, Hong Kong, China. Association for Computational Linguistics.&lt;/p&gt;
+
+&lt;p&gt;Najoung Kim, Roma Patel, Adam Poliak, Patrick Xia, Alex Wang, Tom McCoy, Ian Tenney, Alexis Ross, Tal Linzen, Benjamin Van Durme, Samuel R. Bowman, and Ellie Pavlick. 2019. Probing What Different NLP Tasks Teach Machines about Function Word Comprehension. In Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*SEM 2019), pages 235–249, Minneapolis, Minnesota. Association for Computational Linguistics.&lt;/p&gt;
+
+&lt;p&gt;Yonatan Belinkov. 2022. Probing Classifiers: Promises, Shortcomings, and Advances. Computational Linguistics, 48(1):207–219.&lt;/p&gt;</content><author><name>Marubou</name></author><category term="自然言語処理" /><summary type="html">日本語でのまとめが見当たらなかったので自分用の書き残しです。学生のまとめですので、いろいろご容赦ください。</summary></entry><entry><title type="html">へぇ、留年は初めて？お姉さんが教えてあげようか</title><link href="http://localhost:4000/2022/12/16/Advent/" rel="alternate" type="text/html" title="へぇ、留年は初めて？お姉さんが教えてあげようか" /><published>2022-12-16T00:00:00+09:00</published><updated>2022-12-16T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/16/Advent</id><content type="html" xml:base="http://localhost:4000/2022/12/16/Advent/">&lt;p&gt;この記事は&lt;a href=&quot;https://adventar.org/calendars/7426&quot;&gt;公立はこだて未来大学 Advent Calendar 2022 Part2&lt;/a&gt; の記事です。
+昨日の記事はタコスさん（？）による&lt;a href=&quot;https://note.com/daemon_of_tacos/n/n8d7b0572949e&quot;&gt;「大学院には行くな！」&lt;/a&gt;でした。タコ&lt;strong&gt;ライス&lt;/strong&gt;食べたくなりました。大学院進学について興味のある学部１から３年生の方は読むと参考になるかと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;導入&quot;&gt;導入&lt;/h1&gt;
+&lt;p&gt;はじめまして、私は学部４年生になれなかった女です。タイトルのような、年下を誘惑するお姉さんではありません。代わりに妹に描いてもらった「後輩を惑わす留年お姉さん」のイラストをおいておきます。なんなら学校やめそうな勢いのお姉さんを描いてもらえました。
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/712655088119709716/1053283900669042748/2-3.png&quot; alt=&quot;&quot; /&gt;
+この記事では私がどのように留年し、どのように過ごし、どのようなことを考えたかを述べてます。あくまで私の場合なので、全てを参考にしないでください。いや、むしろ皆さんの参考にならないといいなと思います。みんな頑張って進級してください。&lt;/p&gt;
+
+&lt;h1 id=&quot;留年の経緯&quot;&gt;留年の経緯&lt;/h1&gt;
+&lt;p&gt;簡潔に述べると必修科目のレポートの点数が足りていませんでした。レポートは１つ２つくらいやっていない問題があり、各演習についての考察なども書いていないといった状態でした。心優しい先生から再提出の機会をいただきましたが、なんとメールを見ておらずスルーし、その結果落単です。皆さん休みに入ってもメールはきちんと見ましょう。&lt;/p&gt;
+
+&lt;h1 id=&quot;休学について&quot;&gt;休学について&lt;/h1&gt;
+
+&lt;h2 id=&quot;どんな人が休学するか&quot;&gt;どんな人が休学するか&lt;/h2&gt;
+
+&lt;p&gt;まず、留年したら次年度に休学をするのか、しないのかの意思決定を行う必要があります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;休学あり：単位数がある程度足りているならこちら。メリットは休学を行うと学費と時間が浮くこと。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;休学なし：単位数が大幅に足りていないのであれば、必修のないときでもできる限り単位を取りに行ったほうが、結果的には留年回数が少なく済むかもしれない。親とよく作戦を練ったほうが良い。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;私は休学を選びました。休学しない友人もいたので、人それぞれです。&lt;/p&gt;
+
+&lt;h2 id=&quot;休学の事務手続き&quot;&gt;休学の事務手続き&lt;/h2&gt;
+
+&lt;p&gt;必修のある前期か後期のみ登校し、残りの期では休学になります。&lt;/p&gt;
+
+&lt;p&gt;前期に休学するのであればその３月、後期なら８月までに休学届を出す必要があります。これには親の承諾と、休学理由、学科長と担任のサインが必要です。学科長と担任のについては事務から教えてもらえます。学科長と担任の先生はなぜ休学するのか、復学後の動きはどうなってるかなど軽く話をするだけです。私は５分ほどで終わりました。&lt;/p&gt;
+
+&lt;p&gt;復学届も必要ですが、これは大学から自宅に郵送で届くので特に心配ありません。郵送先は休学時に事務に聞かれます。&lt;/p&gt;
+
+&lt;h1 id=&quot;留年してなにしたのか&quot;&gt;留年してなにしたのか&lt;/h1&gt;
+
+&lt;p&gt;私がやっていたことを意図も添えて述べます。一例にすぎないです。&lt;/p&gt;
+
+&lt;h2 id=&quot;インターン&quot;&gt;インターン&lt;/h2&gt;
+&lt;p&gt;インターンはサイボウズのラボユース研究生として、学部3年次のプロジェクト学習でやっていたことの続きをやらせてもらいました。このインターンでは自分が持ち寄ったテーマで開発や研究を行えます。通年のインターンで、週に１回のミーティングがあります。留年して長い期間フリーになるので、長期のインターンに行って力をつけるしかないと思い応募しました。&lt;/p&gt;
+
+&lt;h2 id=&quot;基礎科目の勉強&quot;&gt;基礎科目の勉強&lt;/h2&gt;
+&lt;p&gt;上記のインターンにともなって、自分が専攻したい分野の基礎的なことの勉強をしました。基礎的な数学知識などの勉強は時間も労力もかかるので、なかなか簡単に取れるようなものでもありません。自分のやりたいことをよく考え、必要な知識を蓄えることは卒論にも役立つだろうと思い勉強しました。&lt;/p&gt;
+
+&lt;h2 id=&quot;ゲーム&quot;&gt;ゲーム&lt;/h2&gt;
+&lt;p&gt;ゲームたのしかったです。Terrariaにドハマりしました。神ゲーです。FPSも少しやりました。&lt;/p&gt;
+
+&lt;h2 id=&quot;周りの例&quot;&gt;周りの例&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ひたすらゲームと遊び。モラトリアムを謳歌する。&lt;/li&gt;
+  &lt;li&gt;インターンまみれ。お金のもらえるインターンに行きまくり毎日その仕事をする。&lt;/li&gt;
+  &lt;li&gt;実家に撤収&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;やればよかったなと思うこと&quot;&gt;やればよかったなと思うこと&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;旅行
+  お金も時間もあるモラトリアムを謳歌すればよかった&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TOEIC
+  さっさと取ればよかった&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;車の免許
+  さっさと(ry&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;留年の振り返り&quot;&gt;留年の振り返り&lt;/h1&gt;
+&lt;p&gt;私は大学院に進学するか迷っていたり、単位数が少し少なかったりしていたので、結果的には留年してゆとりが生まれました。進路について考える余裕もできましたし、インターンにも行けました。親には感謝と謝罪をしました。&lt;/p&gt;
+
+&lt;p&gt;反省点を述べると、結局大学院試験への対策はできていないことです。好きな開発や研究(?)ばかりで嫌なことからは逃げてしまっています。留年中もきちんと前に進むのは、なかなかに自走力が必要だなぁなどと思いました。&lt;/p&gt;
+
+&lt;h1 id=&quot;お姉さんとの約束&quot;&gt;お姉さんとの約束&lt;/h1&gt;
+
+&lt;p&gt;十人十色の留年の仕方があるので、留年してどう過ごすのかは自由です。この記事に書いてあることは、後輩をたぶらかす多留のお姉さんの戯言だと思い、適切な心の距離を保ちながら参考にしてください。&lt;/p&gt;</content><author><name>Marubou</name></author><category term="ひとりごと" /><summary type="html">この記事は公立はこだて未来大学 Advent Calendar 2022 Part2 の記事です。 昨日の記事はタコスさん（？）による「大学院には行くな！」でした。タコライス食べたくなりました。大学院進学について興味のある学部１から３年生の方は読むと参考になるかと思います。</summary></entry><entry><title type="html">Pythonのlistをcopyしないと、for文で無限ループに入る</title><link href="http://localhost:4000/2022/07/16/python/" rel="alternate" type="text/html" title="Pythonのlistをcopyしないと、for文で無限ループに入る" /><published>2022-07-16T00:00:00+09:00</published><updated>2022-07-16T00:00:00+09:00</updated><id>http://localhost:4000/2022/07/16/python</id><content type="html" xml:base="http://localhost:4000/2022/07/16/python/">&lt;p&gt;先日Pythonでlistの要素についてfor文を回したところ、無限ループに入ってしまいました。Pythonの仕様について、基礎的なことですが知らなかったので反省の意をこめて記事にします。&lt;/p&gt;
+
+&lt;h1 id=&quot;起きたこと&quot;&gt;起きたこと&lt;/h1&gt;
+&lt;p&gt;簡単なコードになおすと以下のようなことがおきました。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A=[]
+B=A
+
+for i in B:
+    A.append(2)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;これで&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B&lt;/code&gt;に無限に２が代入され、終わらなくなってしまいました。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;に代入しているのにどうして…&lt;/p&gt;
+
+&lt;h1 id=&quot;調べてわかったこと&quot;&gt;調べてわかったこと&lt;/h1&gt;
+&lt;p&gt;「Python 参照渡し」で調べれば詳しい情報は多数でてくるかと思います。簡潔に述べると、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B=A&lt;/code&gt;と書くとこの二つは同じオブジェクトを示すことになり、つまり呼び方が違うだけで一緒のオブジェクトについて話してることになるということです。&lt;/p&gt;
+
+&lt;h1 id=&quot;解決方法&quot;&gt;解決方法&lt;/h1&gt;
+&lt;p&gt;コピーして違うオブジェクトして使いたいときは、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.copy&lt;/code&gt;などを使います。&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A=[]
+B=A.copy()
+
+for i in B:
+    A.append(2)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;これで無限ループにならず望んだ挙動になりました。&lt;/p&gt;
+
+&lt;h1 id=&quot;おわり&quot;&gt;おわり&lt;/h1&gt;
+&lt;p&gt;Pythonに参照渡しという言葉があるのは知っていたので、これが噂の…？と調べることができました。知っててよかったね。&lt;/p&gt;</content><author><name>Marubou</name></author><category term="反省" /><category term="Python" /><summary type="html">先日Pythonでlistの要素についてfor文を回したところ、無限ループに入ってしまいました。Pythonの仕様について、基礎的なことですが知らなかったので反省の意をこめて記事にします。</summary></entry><entry><title type="html">サポートベクトルマシン資料</title><link href="http://localhost:4000/2022/06/08/supportvectormachine/" rel="alternate" type="text/html" title="サポートベクトルマシン資料" /><published>2022-06-08T00:00:00+09:00</published><updated>2022-06-08T00:00:00+09:00</updated><id>http://localhost:4000/2022/06/08/supportvectormachine</id><content type="html" xml:base="http://localhost:4000/2022/06/08/supportvectormachine/">&lt;p&gt;「統計的機械学習の数理100問 with Python」の輪読会にて、サポートベクトルマシンの担当になりました。資料を置いておこうと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://marbou090.github.io/MyBlog/folder/supportvector.pdf&quot;&gt;資料PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;感想&quot;&gt;感想&lt;/h3&gt;
+&lt;p&gt;最適化問題楽しそうだな〜、という気持ちになりました。楽しかったです。&lt;/p&gt;
+
+&lt;h3 id=&quot;画像出典&quot;&gt;画像出典&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;カーネル法概念図(https://www.ism.ac.jp/~fukumizu/OsakaU2014/OsakaU_1intro.pdf)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;他写真は「サポートベクトルマシン (機械学習プロフェッショナルシリーズ) 」「統計的機械学習の数理100問 with Python」からお借りしています。&lt;/p&gt;
+
+&lt;h3 id=&quot;参考文献&quot;&gt;参考文献&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;サポートベクトルマシン (機械学習プロフェッショナルシリーズ)&lt;/li&gt;
+  &lt;li&gt;はじめてのパターン認識&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marubou</name></author><category term="輪読" /><category term="機械学習" /><summary type="html">「統計的機械学習の数理100問 with Python」の輪読会にて、サポートベクトルマシンの担当になりました。資料を置いておこうと思います。</summary></entry><entry><title type="html">「兎田ぺこら」になる(なれない)</title><link href="http://localhost:4000/2021/12/20/TranslateToPekora/" rel="alternate" type="text/html" title="「兎田ぺこら」になる(なれない)" /><published>2021-12-20T00:00:00+09:00</published><updated>2021-12-20T00:00:00+09:00</updated><id>http://localhost:4000/2021/12/20/TranslateToPekora</id><content type="html" xml:base="http://localhost:4000/2021/12/20/TranslateToPekora/">&lt;p&gt;この記事は&lt;a href=&quot;https://adventar.org/calendars/7183&quot;&gt;FUN part2 Advent Calendar 2021 Part2&lt;/a&gt;の20日目の記事です。昨日は嶋さんの&lt;a href=&quot;https://shima-chimp.hateblo.jp/entry/2021/12/19/030214&quot;&gt;『なんか半年で退職したやつとその時の事』&lt;/a&gt;でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。&lt;/p&gt;
 
 &lt;h1 id=&quot;自己紹介&quot;&gt;自己紹介&lt;/h1&gt;
 &lt;p&gt;はこだて未来大複雑系コース学部３年の加藤まると申します。先日鬼滅の刃を視聴しました。とても面白かったです。友達を募集しています。&lt;/p&gt;
@@ -87,7 +250,75 @@
 &lt;h1 id=&quot;あとがき&quot;&gt;あとがき&lt;/h1&gt;
 &lt;p&gt;文体変換というテーマはやってみたかったので楽しかったです。彼女を題材にしたのは好きだからです。(私の中で)最強のアイドルだからです。理由は十分ですね。幸せな時間でした。&lt;/p&gt;
 
-&lt;p&gt;明日21日目の記事はふぁるくんです。PBLがんばってえらかった！&lt;/p&gt;</content><author><name>Marubou</name></author><category term="個人開発" /><category term="Python" /><category term="自然言語処理" /><summary type="html">この記事はFUN part2 Advent Calendar 2021 Part2の20日目の記事です。昨日は嶋さんの『なんか半年で退職したやつとその時の事』でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。</summary></entry><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
+&lt;p&gt;明日21日目の記事はふぁるくんです。PBLがんばってえらかった！&lt;/p&gt;</content><author><name>Marubou</name></author><category term="個人開発" /><category term="Python" /><category term="自然言語処理" /><summary type="html">この記事はFUN part2 Advent Calendar 2021 Part2の20日目の記事です。昨日は嶋さんの『なんか半年で退職したやつとその時の事』でした。奇想天外キテレツ体験で退職するよりずっとリアルで、あぁ本当の虚無は粛々とやってくるのだなと恐ろしくなりました。でもお仕事見つかったようでよかったです。</summary></entry><entry><title type="html">1日1確率情報理論</title><link href="http://localhost:4000/2021/04/19/probabilityinfo/" rel="alternate" type="text/html" title="1日1確率情報理論" /><published>2021-04-19T00:00:00+09:00</published><updated>2021-04-19T00:00:00+09:00</updated><id>http://localhost:4000/2021/04/19/probabilityinfo</id><content type="html" xml:base="http://localhost:4000/2021/04/19/probabilityinfo/">&lt;p&gt;春休みの時間を使って、大学の同期と1日1問ずつ確率情報理論についての問題を解く会をしました。昨年夏にも１日１確率論をやっており、今回はTeXを用いて資料作成を行ってみました。確率情報理論リポジトリで使った資料を公開しています。&lt;/p&gt;
+
+&lt;p&gt;問題は下記の参考問題集から、数字を変えたりして出題しています。個人が制作したものですので、間違いなどがあるかもしれません。使用する際は注意してください。&lt;/p&gt;
+
+&lt;h1 id=&quot;資料url&quot;&gt;資料URL&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay&quot;&gt;確率情報理論リポジトリ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;お品書き&quot;&gt;お品書き&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec01.pdf&quot;&gt;第１回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans01.pdf&quot;&gt;第１回解答&lt;/a&gt;&lt;br /&gt;
+離散確率分布,確率空間,確率分布,分布関数&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec02.pdf&quot;&gt;第２回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans02.pdf&quot;&gt;第２回解答&lt;/a&gt;&lt;br /&gt;
+連続確率分布,確率関数,期待値&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec03.pdf&quot;&gt;第３回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans03.pdf&quot;&gt;第３回解答&lt;/a&gt;&lt;br /&gt;
+離散確率分布,(累積)分布関数,期待値,同時確率,条件付き期待値&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec04.pdf&quot;&gt;第４回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans04.pdf&quot;&gt;第４回解答&lt;/a&gt;&lt;br /&gt;
+連続確率分布,標準正規分布,期待値,分散,(正規分布)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec05.pdf&quot;&gt;第５回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans05.pdf&quot;&gt;第５回解答&lt;/a&gt;&lt;br /&gt;
+大数の法則,二項分布,正規分布,(しっぽの定理),(指数分布)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec06.pdf&quot;&gt;第６回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans06.pdf&quot;&gt;第６回解答&lt;/a&gt;&lt;br /&gt;
+中心極限定理,正規近似,正規分布,(二項分布)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec07.pdf&quot;&gt;第７回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans07.pdf&quot;&gt;第７回解答&lt;/a&gt;&lt;br /&gt;
+チェビシェフ不等式&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec08.pdf&quot;&gt;第８回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans08.pdf&quot;&gt;第８回解答&lt;/a&gt;&lt;br /&gt;
+マルコフ不等式,イェンセン不等式&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec09.pdf&quot;&gt;第９回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans09.pdf&quot;&gt;第９回解答&lt;/a&gt;&lt;br /&gt;
+確率変数の分解&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec10.pdf&quot;&gt;第１０回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans10.pdf&quot;&gt;第１０回解答&lt;/a&gt;&lt;br /&gt;
+カルバック情報量,二項分布&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec11.pdf&quot;&gt;第１１回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans11.pdf&quot;&gt;第１１回解答&lt;/a&gt;&lt;br /&gt;
+統計的推定, 信頼区間,母平均の推定,母比率の推定,二項分布&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec12.pdf&quot;&gt;第１２回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans12.pdf&quot;&gt;第１２回解答&lt;/a&gt;&lt;br /&gt;
+不偏標本分散, 標本平均,不偏推定量,有効推定量&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec13.pdf&quot;&gt;第１３回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans13.pdf&quot;&gt;第１３回解答&lt;/a&gt;&lt;br /&gt;
+最尤推定量&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec14.pdf&quot;&gt;第１４回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans14.pdf&quot;&gt;第１４回解答&lt;/a&gt;&lt;br /&gt;
+クラメールラオの不等式&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec15.pdf&quot;&gt;第１５回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans15.pdf&quot;&gt;第１５回解答&lt;/a&gt;&lt;br /&gt;
+仮説検定&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec16.pdf&quot;&gt;第１６回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans16.pdf&quot;&gt;第１６回解答&lt;/a&gt;&lt;br /&gt;
+情報量&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec17.pdf&quot;&gt;第１７回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans17.pdf&quot;&gt;第１７回解答&lt;/a&gt;&lt;br /&gt;
+エントロピー, 相互エントロピー&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec18.pdf&quot;&gt;第１８回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans18.pdf&quot;&gt;第１８回解答&lt;/a&gt;&lt;br /&gt;
+エントロピー, 同時エントロピー&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec19.pdf&quot;&gt;第１９回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans19.pdf&quot;&gt;第１９回解答&lt;/a&gt;&lt;br /&gt;
+エントロピー&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/sec20.pdf&quot;&gt;第２０回問題&lt;/a&gt;・&lt;a href=&quot;https://github.com/marbou090/ProbabilityInfPerDay/blob/main/pdf/ans20.pdf&quot;&gt;第２０回解答&lt;/a&gt;&lt;br /&gt;
+エントロピー, 標本分布&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;参考問題集&quot;&gt;参考問題集&lt;/h1&gt;
+&lt;p&gt;下記参考書からの出典問題があります。他参考サイトがあった場合pdfに載せています。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E5%BC%B1%E7%82%B9%E5%85%8B%E6%9C%8D%E5%A4%A7%E5%AD%A6%E7%94%9F%E3%81%AE%E7%A2%BA%E7%8E%87%E3%83%BB%E7%B5%B1%E8%A8%88-%E8%97%A4%E7%94%B0-%E5%B2%B3%E5%BD%A6/dp/4489020694&quot;&gt;弱点克服 大学生の確率・統計&lt;/a&gt;&lt;br /&gt;
+私はこのシリーズの問題集はどれも好きです。解説と問題がそれぞれの設問で載っています。チャートっぽいです。説明がどれも丁寧（天才式変形がない）です。最後に全ての問題がシャッフルされたごちゃまぜテスト形式の問題があり、テスト対策に向いています。微分方程式版、微分・積分版もあります。知人の京大のお姉さんが院試向けにこれを使ってたのできっといいんだろうなと思って使ってました。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E7%A2%BA%E7%8E%87%E8%AB%96-%E5%B2%A9%E6%B3%A2%E5%9F%BA%E7%A4%8E%E6%95%B0%E5%AD%A6%E9%81%B8%E6%9B%B8-%E4%BC%8A%E8%97%A4-%E6%B8%85/dp/400007816X&quot;&gt;確率論 (岩波基礎数学選書)&lt;/a&gt;&lt;br /&gt;
+例題が豊富で良いです。解答は端折られていることが多いので他参考書で慣れたら手をつけるとよいです。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://books.rakuten.co.jp/rb/1777457/?istCompanyId=304a234b-c871-4407-99f0-29afe4f462b7&amp;amp;istFeedId=d5566c12-972c-48c2-873c-819466af1ba8&amp;amp;istItemId=wlqpmrxal&amp;amp;istBid=t&amp;amp;scid=we_lnk_ad_book_non_pla&quot;&gt;確率と統計　情報学への架橋&lt;/a&gt;&lt;br /&gt;
+情報理論周りの問題はこちらを参考にしました。弊大の確率情報理論授業ではこちらが教科書になっています。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marubou</name></author><category term="確率情報理論" /><category term="確率/統計" /><summary type="html">春休みの時間を使って、大学の同期と1日1問ずつ確率情報理論についての問題を解く会をしました。昨年夏にも１日１確率論をやっており、今回はTeXを用いて資料作成を行ってみました。確率情報理論リポジトリで使った資料を公開しています。</summary></entry><entry><title type="html">抱負と振り返り</title><link href="http://localhost:4000/2021/01/01/HappyNewYear/" rel="alternate" type="text/html" title="抱負と振り返り" /><published>2021-01-01T00:00:00+09:00</published><updated>2021-01-01T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/01/HappyNewYear</id><content type="html" xml:base="http://localhost:4000/2021/01/01/HappyNewYear/">&lt;p&gt;あけましておめでとうございます。2021年になったということで、昨年の振り返りと今年の抱負をつらつら述べます。&lt;/p&gt;
 
 &lt;h1 id=&quot;2020年振り返り&quot;&gt;2020年振り返り&lt;/h1&gt;
 
